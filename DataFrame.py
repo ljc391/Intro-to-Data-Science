@@ -40,5 +40,6 @@ def create_dataframe():
     # your code here
     data = {'country_name':countries, 'gold':gold, 'silver':silver, 'bronze':bronze}
     olympic_medal_counts_df = DataFrame(data)
+    print    olympic_medal_counts_df['gold'] 
 
     return olympic_medal_counts_df
