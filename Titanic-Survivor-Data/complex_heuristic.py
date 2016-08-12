@@ -63,4 +63,8 @@ def complex_heuristic(file_path):
         #     if passenger['Sex'] == 'male' or passenger['Age'] < 18:
         #         predictions[passenger_id] = 1
         # 
+        if passenger['Sex'] == 'female' or passenger['Pclass'] == 1 and passenger['Age']<18:
+            predictions[passenger_id] = 1
+        else:
+            predictions[passenger_id] = 0
     return predictions
