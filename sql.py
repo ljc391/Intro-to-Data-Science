@@ -18,7 +18,7 @@ def select_first_50(filename):
     # You can download a copy of the aadhaar data that we are passing 
     # into this exercise below:
     # https://s3.amazonaws.com/content.udacity-data.com/courses/ud359/aadhaar_data.csv
-    q ="SELECT registrar, enrolment_agency From aadhaar_data LIMIT 50; "
+    q ="""SELECT registrar, enrolment_agency From aadhaar_data LIMIT 50; """
     
 
     #Execute your SQL command against the pandas frame
